@@ -1,23 +1,24 @@
 programa
 {
-	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
-		real x1, x2, y1, y2, distancia
+		inteiro n
 
-		escreva("Digite o valor de x1: ")
-		leia(x1)
-		escreva("Digite o valor de x2: ")
-		leia(x2)
-		escreva("Digite o valor de y1: ")
-		leia(y1)
-		escreva("Digite o valor de y2: ")
-		leia(y2)
+		escreva("Digite um número natural: ")
+		leia(n)
 
-		distancia = mat.raiz(mat.potencia(x2 - x1, 2.0) + mat.potencia(y2 - y1, 2.0), 2.0)
-
-		escreva("A distancia é: " + distancia)
+		se (n == 0) {
+			escreva ("Desculpa, 0 (zero) é um número neutro")
+		} senao se (n < 0) {
+			escreva ("Desculpa, você digitou um número negativo")
+		} senao {
+			se (n % 2 == 0) {
+				escreva ("O número: " + n + " é par")
+			} senao {
+				escreva ("O número: " + n + " é impar")
+			}
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 378; 
+ * @POSICAO-CURSOR = 373; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
