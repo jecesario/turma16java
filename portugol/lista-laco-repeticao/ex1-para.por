@@ -3,9 +3,17 @@ programa
 	
 	funcao inicio()
 	{
-		real mediaSalarioPopulacao, mediaNumeroFilhos, totalNumeroFilhos = 0.0, maiorSalario = 0.0, pessoasAte100 = 0.0, percentualPessoasAte100, salario, totalSalarios = 0.0
-		inteiro numeroFilhos, habitantes = 0
-		para(inteiro i = 0; i < 2; i++) {
+		real mediaSalarioPopulacao
+		real mediaNumeroFilhos 
+		real totalNumeroFilhos = 0.0
+		real maiorSalario = 0.0
+		real pessoasAte100 = 0.0
+		real percentualPessoasAte100
+		real salario
+		real totalSalarios = 0.0
+		inteiro numeroFilhos
+		inteiro habitantes = 0
+		para(inteiro i = 0; i < 20; i++) {
 			escreva("Digite um Salário: " )
 			leia(salario)
 			escreva("Digite a quantidade de filhos: ")
@@ -42,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 594; 
+ * @POSICAO-CURSOR = 321; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

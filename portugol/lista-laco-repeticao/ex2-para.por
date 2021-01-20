@@ -3,13 +3,14 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro soma = 0, multiplo
+		inteiro soma = 0
 		
-		para(inteiro i=1; i<500; i=i+2) {
-			multiplo = i * 3
-			soma += multiplo
+		para(inteiro i=1; i<=500; i=i+2) {
+			se (i%2 != 0 e i%3 == 0) {
+				soma += i
+			}
 		}
-		escreva("A soma dos numeros ímpares multiplos de 3 é igual a: " + soma)
+		escreva("A soma dos numeros ímpares multiplos de 3 até 500 é igual a: " + soma)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 218; 
+ * @POSICAO-CURSOR = 135; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
