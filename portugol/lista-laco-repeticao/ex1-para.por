@@ -13,6 +13,7 @@ programa
 		real totalSalarios = 0.0
 		inteiro numeroFilhos
 		inteiro habitantes = 0
+		
 		para(inteiro i = 0; i < 20; i++) {
 			escreva("Digite um Salário: " )
 			leia(salario)
@@ -50,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 321; 
+ * @POSICAO-CURSOR = 295; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
