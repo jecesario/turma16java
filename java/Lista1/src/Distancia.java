@@ -18,7 +18,8 @@ public class Distancia {
 		distancia = Math.pow(x2 - x1, 2) + Math.pow(y2-y1, 2);
 		distancia = Math.sqrt(distancia);
 		
-		System.out.println("A distancia é: " + distancia);
+		System.out.print("A distancia é: ");
+		System.out.printf("%.2f", distancia);
 		
 		in.close();
 	}

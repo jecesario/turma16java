@@ -15,7 +15,8 @@ public class NotasAlunos {
 		
 		resultado = ((nota1 * 2) + (nota2 * 3 ) + (nota3 * 5)) / 10;
 		
-		System.out.println("Média final: " + resultado);
+		System.out.print("Média final: ");
+		System.out.printf("%.2f", resultado);
 		
 		in.close();
 	}

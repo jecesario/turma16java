@@ -11,7 +11,8 @@ public class PrecoCarro {
 		
 		resultado = custo + (custo * 0.28) + (custo * 0.45);
 		
-		System.out.println("Custo para o consumidor: " + resultado);
+		System.out.print("Custo para o consumidor: R$");
+		System.out.printf("%.2f", resultado);
 		
 		in.close();
 	}

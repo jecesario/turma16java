@@ -18,7 +18,9 @@ public class Expressoes {
 		s = Math.pow(b + c, 2);
 		d = (r + s) / 2;
 		
-		System.out.println("Resultado da expressão: " + d);
+		System.out.print("Resultado da expressão: ");
+		System.out.printf("%.2f", d);
+		
 
 		in.close();
 	}
