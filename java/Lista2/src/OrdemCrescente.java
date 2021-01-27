@@ -14,17 +14,17 @@ public class OrdemCrescente {
 		System.out.print("Digite o terceiro numero: ");
 		n3 = in.nextInt();
 
-		if (n1 > n2) {
-			if (n2 > n3) {
+		if (n1 < n2) {
+			if (n2 < n3) {
 				System.out.printf("Ordem %d %d %d", n1, n2, n3);
-			} else if (n1 > n3) {
+			} else if (n1 < n3) {
 				System.out.printf("Ordem %d %d %d", n1, n3, n2);
 			} else {
 				System.out.printf("Ordem %d %d %d", n3, n1, n2);
 			}
 		} else {
-			if (n2 > n3) {
-				if (n1 > n3) {
+			if (n2 < n3) {
+				if (n1 < n3) {
 					System.out.printf("Ordem %d %d %d", n2, n1, n3);
 				} else {
 					System.out.printf("Ordem %d %d %d", n2, n3, n1);
