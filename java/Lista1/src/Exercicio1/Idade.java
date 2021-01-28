@@ -1,3 +1,4 @@
+package Exercicio1;
 import java.util.Scanner;
 
 public class Idade {

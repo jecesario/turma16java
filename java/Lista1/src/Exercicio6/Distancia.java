@@ -1,3 +1,4 @@
+package Exercicio6;
 import java.util.Scanner;
 
 public class Distancia {

@@ -1,3 +1,4 @@
+package Exercicio7;
 import java.util.Scanner;
 
 public class EquacoesLineares {
