@@ -19,7 +19,7 @@ programa
 
 		para(inteiro i=0; i<4; i++) {
 			para(inteiro j=0; j<6; j++) {
-				escreva("Digite um número para a matriz 1: ")
+				escreva("Digite um número para a matriz 2: ")
 				leia(n2[i][j])
 			}
 		}
@@ -51,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 644; 
+ * @POSICAO-CURSOR = 385; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {n1, 7, 7, 2}-{n2, 8, 7, 2}-{m1, 9, 7, 2}-{m2, 10, 7, 2};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

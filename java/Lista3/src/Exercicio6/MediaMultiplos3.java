@@ -8,7 +8,7 @@ public class MediaMultiplos3 {
 		Scanner in = new Scanner(System.in);
 		int numero;
 		int soma = 0;
-		double media;
+		double media = 0;
 		int contador = 0;
 		System.out.println("*** Programa que exibe a média dos multiplos de 3 ***");
 		System.out.println("Digite 0 (zero) para parar...");
@@ -26,8 +26,13 @@ public class MediaMultiplos3 {
 			}
 		} while (numero != 0);
 		
-		media = soma / contador;
-		System.out.printf("A média dos multiplos de 3 é: %.2f", media);
+		if(contador != 0) {
+			media = (double) soma / contador;
+			System.out.printf("A média dos multiplos de 3 é: %.2f", media);
+		} else {
+			System.out.println("Nenhum número multiplo de 3 foi informado, não existe média!");
+		}
+		
 		
 		in.close();
 	}
