@@ -11,6 +11,7 @@ public class Ecommerce {
 		double estoquePreco[] = { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 };
 		int estoqueQuantidade[] = new int[10];
 		String carrinho[] = new String[10];
+		int verificaCarrinho[] = new int[10];
 		int verificadorEstoque = 0;
 		double precoTotal = 0.0;
 		double subTotal = 0.0;
@@ -20,6 +21,8 @@ public class Ecommerce {
 		int codigoDigitado;
 		int quantidade = 0;
 		char opcao = 'S';
+		int produtoAdicionado[] = new int [10];
+		String opcaoRepetido;
 
 		for (int x = 0; x < 10; x++) { // preenchendo estoque
 			estoqueQuantidade[x] = 10;
@@ -42,11 +45,17 @@ public class Ecommerce {
 			do {
 				System.out.print("DIGITE O CÓDIGO DO PRODUTO: ");
 				codigoDigitado = leia.nextInt();
+				
+				for(int x = 0; x < 10; x++) {
+					if(codigoDigitado == produtoAdicionado[x]) {
+						System.out.println("Produto já adicionado, deseja remover ou adicionar (R/A): ");
+						opcaoRepetido = leia.next().toUpperCase();
+					}
+				}
 
 				for (int x = 0; x < 10; x++) {
-
 					if (codigoDigitado == estoqueCodigo[x]) {
-
+												
 						System.out.println("DIGITE A QUANTIDADE DO PRODUTO: ");
 						quantidade = leia.nextInt();
 
@@ -61,11 +70,12 @@ public class Ecommerce {
 						carrinho[x] = estoqueCodigo[x] + " \t\t\t " + estoqueProdutos[x] + " \t\t\t " + estoquePreco[x]
 								+ " \t\t\t " + quantidade + " \t\t\t\t " + subTotal;
 
+						verificaCarrinho[x] = x;
 						estoqueQuantidade[x] -= quantidade;
 						precoTotal += subTotal;
+						produtoAdicionado[x] = codigoDigitado;
 
 					}
-
 				}
 			} while (opcao == 'S');
 
